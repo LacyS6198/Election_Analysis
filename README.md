@@ -42,6 +42,7 @@ The full election results are also available here:
 # Election-Audit Summary
 The script written for this analysis was created specifically to count the votes per county and votes per candidate. With a few modifications, this code can be applied to other election analyses. 
 
+## Additional Usage #1 
 Using the same election data, this analysis could be modified to breakdown each candidate's votes by county. We could also breakdown each county's votes by candidate. The election results data is present and could support this analysis. The current code creates lists and dictionaries based on the county and candidate separately. See code snippet below. If this code was modified to use multiindex series (hierarchical indexing) then this type of analysis could be performed. 
 
 ```
@@ -54,15 +55,23 @@ counties_list = []
 counties_votes = {}
 ```
 
-The code can be used for different election types including county- or city-level elections, such as a mayoral election. If the data was in the same format/structure as it currently is within the "election_results.csv" with columns of ballot/vote information, geographic location, and candidate name. If a new CSV file was supplied with the same data structure, the code would only need modified to describe the new geographic region type. 
+## Additional Usage #2
+The code cana also be used for different election types including county- or city-level elections, such as a mayoral election. If the data was in the same format/structure as it currently is within the "election_results.csv" with columns of ballot/vote information, geographic location, and candidate name. If a new CSV file was supplied with the same data structure, the code would only need modified to describe the new geographic region type. 
 
 For example, if the election_results.csv file was provided with city information in index 1 instead of county, a few changes could quickly be made to support the use of city in the file. The suggested changes are listed below. 
 
-- Modify lines 21 and 22 to use "City" instead of county
-```
-# 1: Create a county list and county votes dictionary.
-counties_list = []
-counties_votes = {}
-```
-- Modify lines 30 - 32 to you "City" instead of county 
+### Required Modifications
+The below modifications to the code would be requried to be changed for a city mayoral election analysis. If the data structure of the CSV file was the exact same then to support a city analysis would not require changes to the code since the index of the city data would be the same. The only change required would be to the output text.
 
+- Line 89: Change to reference "City" instead of "County"
+- Line 119: Change to reference "City" instead of "County"
+
+![line89](https://user-images.githubusercontent.com/93630042/143771563-e85ca78f-fe09-4219-a721-f0066ff13154.png)
+
+![line119](https://user-images.githubusercontent.com/93630042/143771567-88e1007d-8354-4c08-9cac-324fc64f853b.png)
+
+### Suggested Modifications
+The below modifications to the code are highly suggested if modifying for a city mayoral election analysis. Modifying these portions of code would chagne the code references from "county" to "city", making the code easier to understand. 
+
+- Lines 21 - 22: Change to reference "City" instead of county
+- Lines 30 - 32: Change to reference "City" instead of county
