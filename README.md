@@ -10,6 +10,19 @@ Voting results were measured based on each candidate's or county's total votes, 
 
 # Election-Audit Results:
 
+Overall, there were 369,711 votes cast during the election
+
+## County Election Results
+Each county's total votes were calculated. Based on the results, the county with the highest turnout, based on number of votes, was Denver.
+
+- Votes by County:
+ - Jefferson: 10.5% (38,855)
+ - Denver: 82.8% (306,055)
+ - Arapahoe: 6.7% (24,801)
+
+## Candidate Election Results
+
+The full election results are also available here:
 [election_analysis.txt](https://github.com/LacyS6198/Election_Analysis/files/7613607/election_analysis.txt)
 
 
