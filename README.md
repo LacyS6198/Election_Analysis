@@ -8,6 +8,7 @@ The primary purpose of this analysis is to understand the election results both 
 
 Voting results were measured based on each candidate's or county's total votes, as well as the perecentage of votes received out of total votes cast.
 
+
 # Election-Audit Results
 
 Overall, there were 369,711 votes cast during the election.
@@ -39,3 +40,29 @@ The full election results are also available here:
 
 
 # Election-Audit Summary
+The script written for this analysis was created specifically to count the votes per county and votes per candidate. With a few modifications, this code can be applied to other election analyses. 
+
+Using the same election data, this analysis could be modified to breakdown each candidate's votes by county. We could also breakdown each county's votes by candidate. The election results data is present and could support this analysis. The current code creates lists and dictionaries based on the county and candidate separately. See code snippet below. If this code was modified to use multiindex series (hierarchical indexing) then this type of analysis could be performed. 
+
+```
+# Candidate Options and candidate votes.
+candidate_options = []
+candidate_votes = {}
+
+# 1: Create a county list and county votes dictionary.
+counties_list = []
+counties_votes = {}
+```
+
+The code can be used for different election types including county- or city-level elections, such as a mayoral election. If the data was in the same format/structure as it currently is within the "election_results.csv" with columns of ballot/vote information, geographic location, and candidate name. If a new CSV file was supplied with the same data structure, the code would only need modified to describe the new geographic region type. 
+
+For example, if the election_results.csv file was provided with city information in index 1 instead of county, a few changes could quickly be made to support the use of city in the file. The suggested changes are listed below. 
+
+- Modify lines 21 and 22 to use "City" instead of county
+```
+# 1: Create a county list and county votes dictionary.
+counties_list = []
+counties_votes = {}
+```
+- Modify lines 30 - 32 to you "City" instead of county 
+
