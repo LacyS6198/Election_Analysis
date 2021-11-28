@@ -8,9 +8,9 @@ The primary purpose of this analysis is to understand the election results both 
 
 Voting results were measured based on each candidate's or county's total votes, as well as the perecentage of votes received out of total votes cast.
 
-# Election-Audit Results:
+# Election-Audit Results
 
-Overall, there were 369,711 votes cast during the election
+Overall, there were 369,711 votes cast during the election.
 
 ## County Election Results
 Each county's total votes were calculated. Based on the results, the county with the highest turnout, based on number of votes, was Denver.
@@ -38,4 +38,4 @@ The full election results are also available here:
 [election_analysis.txt](https://github.com/LacyS6198/Election_Analysis/files/7613607/election_analysis.txt)
 
 
-# Election-Audit Summary:
+# Election-Audit Summary
