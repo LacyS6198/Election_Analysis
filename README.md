@@ -19,10 +19,20 @@ Each county's total votes were calculated. Based on the results, the county with
 - Jefferson: 10.5% (38,855)
 - Denver: 82.8% (306,055)
 - Arapahoe: 6.7% (24,801)
-
-### County with highest number of votes:  Denver
+- County with highest number of votes:  Denver
 
 ## Candidate Election Results
+Each candidate's total votes were calculated. Based on the results, the winner of the election was Diana DeGette.
+
+### Votes by Candidate
+- Charles Casper Stockham: 23.0% (85,213)
+- Diana DeGette: 73.8% (272,892)
+- Raymon Anthony Doane: 3.1% (11,606)
+
+### Winning Candidate
+- Winner: Diana DeGette
+- Winning Vote Count: 272,892
+- Winning Percentage: 73.8%
 
 The full election results are also available here:
 [election_analysis.txt](https://github.com/LacyS6198/Election_Analysis/files/7613607/election_analysis.txt)
