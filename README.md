@@ -56,7 +56,7 @@ counties_votes = {}
 ```
 
 ## Additional Usage #2
-The code cana also be used for different election types including county- or city-level elections, such as a mayoral election. If the data was in the same format/structure as it currently is within the "election_results.csv" with columns of ballot/vote information, geographic location, and candidate name. If a new CSV file was supplied with the same data structure, the code would only need modified to describe the new geographic region type. 
+The code cana also be used for different election types including county- or city-level elections, such as a mayoral election. If different election data was provided in the same format/structure as the current CSV (columns of ballot/vote information, geographic location, and candidate name), the code would need only minor changes to support analyzing a different election type.
 
 For example, if the election_results.csv file was provided with city information in index 1 instead of county, a few changes could quickly be made to support the use of city in the file. The suggested changes are listed below. 
 
